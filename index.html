@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         :root {
-            --primary: #2e4057;
-            --accent: #ffb347;
-            --bg-gradient: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
-            --glass: rgba(255,255,255,0.7);
+            --primary: #1e3a5c; /* Deep Blue */
+            --accent: #4f8cc9; /* Lighter Blue */
+            --bg-gradient: linear-gradient(120deg, #e3eaf2 0%, #b0b8c1 100%); /* Blue to Gray */
+            --glass: rgba(240,245,255,0.7); /* Blue-tinted glass */
             --glass-blur: blur(12px);
-            --shadow: 0 8px 32px 0 rgba(46,64,87,0.18);
+            --shadow: 0 8px 32px 0 rgba(30,58,92,0.18); /* Blue shadow */
         }
         html, body {
             height: 100%;
@@ -61,7 +61,7 @@
         }
         .tagline {
             font-size: 1.1rem;
-            color: #6b7a8f;
+            color: #5a6b7f; /* Muted Gray-Blue */
             font-weight: 500;
             max-width: 320px;
             text-align: right;
@@ -77,7 +77,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(120deg, #e0e7ef 60%, #ffecd2 100%);
+            background: linear-gradient(120deg, #b0b8c1 60%, #e3eaf2 100%); /* Gray to Blue */
             position: relative;
             overflow: hidden;
         }
@@ -104,7 +104,7 @@
         }
         .hero-desc {
             font-size: 1.3rem;
-            color: #3a5a7a;
+            color: #2e4057; /* Blue Gray */
             margin-bottom: 1.5rem;
         }
         .hero-cta {
@@ -115,12 +115,12 @@
             font-weight: 700;
             padding: 0.8rem 2.2rem;
             border-radius: 30px;
-            box-shadow: 0 4px 16px #ffb34733;
+            box-shadow: 0 4px 16px #4f8cc933;
             text-decoration: none;
             transition: background 0.2s, transform 0.2s;
         }
         .hero-cta:hover {
-            background: #ff9800;
+            background: #2566a3; /* Darker Blue */
             transform: translateY(-2px) scale(1.04);
         }
         .menu-section {
@@ -146,7 +146,7 @@
         }
         .menu-card:hover {
             transform: translateY(-8px) scale(1.025);
-            box-shadow: 0 12px 36px 0 #2e405733;
+            box-shadow: 0 12px 36px 0 #1e3a5c33;
         }
         .menu-icon {
             font-size: 2.5rem;
@@ -173,7 +173,7 @@
             justify-content: space-between;
             align-items: flex-start;
             padding: 0.7rem 0;
-            border-bottom: 1px dashed #e0e7ef;
+            border-bottom: 1px dashed #b0b8c1;
             transition: background 0.18s;
             border-radius: 8px;
         }
@@ -181,14 +181,14 @@
             border-bottom: none;
         }
         .menu-item:hover {
-            background: #ffecd2cc;
+            background: #e3eaf2cc;
         }
         .item-name {
             font-weight: 600;
             font-size: 1.08rem;
         }
         .item-desc {
-            color: #6b7a8f;
+            color: #5a6b7f; /* Muted Gray-Blue */
             font-size: 0.98rem;
             margin-top: 0.1rem;
         }
@@ -202,7 +202,7 @@
         footer {
             text-align: center;
             padding: 2.2rem 0 2.5rem 0;
-            color: #7a8ca3;
+            color: #5a6b7f; /* Muted Gray-Blue */
             font-size: 1.1rem;
             background: none;
             margin-top: 2rem;
@@ -289,7 +289,7 @@
             </ul>
         </div>
         <div class="menu-card">
-            <div class="menu-icon"><i class="fas fa-ice-cream"></i></div>
+            <div class="menu-icon"><i class="fas fa-snowflake"></i></div>
             <div class="menu-title">Cold Drinks - Milkshakes</div>
             <ul class="menu-items">
                 <li class="menu-item"><div><span class="item-name">Vanilla Milkshake</span><div class="item-desc">Creamy vanilla ice cream, fresh milk, and a swirl of love.</div></div><span class="item-price">320,000</span></li>
@@ -346,7 +346,7 @@
             </ul>
         </div>
         <div class="menu-card">
-            <div class="menu-icon"><i class="fas fa-pancakes"></i></div>
+            <div class="menu-icon"><i class="fas fa-cake"></i></div>
             <div class="menu-title">Pancakes</div>
             <ul class="menu-items">
                 <li class="menu-item"><div><span class="item-name">3 Layers</span><div class="item-desc">Fluffy pancakes stacked high, served with syrupy delight.</div></div><span class="item-price">300,000</span></li>
@@ -357,6 +357,30 @@
                 <li class="menu-item"><div><span class="item-name">Add: Marshmello</span><div class="item-desc">Soft, gooey marshmallows for extra fun.</div></div><span class="item-price">50,000</span></li>
             </ul>
         </div>
+        <div class="menu-card">
+            <div class="menu-icon"><i class="fas fa-ice-cream"></i></div>
+            <div class="menu-title">Ice Cream</div>
+            <ul class="menu-items">
+                <li class="menu-item"><div><span class="item-name">Scoop</span><div class="item-desc">Your choice of ice cream scoop.</div></div><span class="item-price">70,000</span></li>
+            </ul>
+        </div>
+        <div class="menu-card">
+            <div class="menu-icon"><i class="fas fa-ellipsis-h"></i></div>
+            <div class="menu-title">Other</div>
+            <ul class="menu-items">
+                <li class="menu-item"><div><span class="item-name">Ask for more</span><div class="item-desc">Special requests or items not listed.</div></div><span class="item-price">-</span></li>
+            </ul>
+        </div>
+        <div class="menu-card">
+            <div class="menu-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="menu-title">Gaming</div>
+            <ul class="menu-items">
+                <li class="menu-item"><div><span class="item-name">PS5</span><div class="item-desc">PlayStation 5 gaming session.</div></div><span class="item-price">100,000 L.L</span></li>
+                <li class="menu-item"><div><span class="item-name">PS4</span><div class="item-desc">PlayStation 4 gaming session.</div></div><span class="item-price">100,000 L.L</span></li>
+                <li class="menu-item"><div><span class="item-name">Chess</span><div class="item-desc">Cheakmate!!</div></div><span class="item-price">FREE</span></li>
+            </ul>
+        </div>
+        
     </section>
     <footer>
         <div class="footer-social">
@@ -364,7 +388,7 @@
             <a href="https://wa.me/96170648763" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a> <span style="font-size:0.98rem;color:#6b7a8f;">Ali Hilal</span>
             <a href="https://wa.me/96181960720" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a> <span style="font-size:0.98rem;color:#6b7a8f;">Haidar Khlifa</span>
         </div>
-        &copy; 2025 Horizon Caffee. Crafted with <span style="color:#ffb347">&hearts;</span> by Haidar Khalifa.
+        &copy; 2025 Horizon Caffee. Crafted with <span style="color:#2566a3">&hearts;</span> by Haidar Khalifa.
     </footer>
 </body>
 </html>
